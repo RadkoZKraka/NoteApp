@@ -17,6 +17,7 @@ namespace NoteApp
             InitializeComponent();
             Controls.Add(mainView);
             mainView.Dock = DockStyle.Fill;
+            
         }
     }
 }

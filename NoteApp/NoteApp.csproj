@@ -56,6 +56,9 @@
         <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
           <HintPath>..\packages\System.Text.Encodings.Web.7.0.0-preview.3.22175.4\lib\net462\System.Text.Encodings.Web.dll</HintPath>
         </Reference>
+        <Reference Include="System.Text.Json">
+          <HintPath>..\packages\System.Text.Json.7.0.0-preview.3.22175.4\lib\net462\System.Text.Json.dll</HintPath>
+        </Reference>
         <Reference Include="System.Text.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
           <HintPath>..\packages\System.Text.Json.7.0.0-preview.3.22175.4\lib\net462\System.Text.Json.dll</HintPath>
         </Reference>
@@ -78,21 +81,28 @@
     <ItemGroup>
         <Compile Include="Const.cs" />
         <Compile Include="Controllers\MainController.cs" />
-        <Compile Include="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
-        </Compile>
+        <Compile Include="Lib\DataWrapper.cs" />
         <Compile Include="Lib\ReadData.cs" />
         <Compile Include="Lib\WriteData.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="UI\FirstView.cs">
+        <Compile Include="UI\EntryForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="UI\EntryForm.Designer.cs">
+          <DependentUpon>EntryForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="UI\EntryView.cs">
           <SubType>UserControl</SubType>
         </Compile>
-        <Compile Include="UI\FirstView.Designer.cs">
-          <DependentUpon>FirstView.cs</DependentUpon>
+        <Compile Include="UI\EntryView.Designer.cs">
+          <DependentUpon>EntryView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="UI\Form1.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="UI\Form1.Designer.cs">
+          <DependentUpon>Form1.cs</DependentUpon>
         </Compile>
         <Compile Include="UI\MainView.cs">
           <SubType>UserControl</SubType>
@@ -100,9 +110,6 @@
         <Compile Include="UI\MainView.Designer.cs">
           <DependentUpon>MainView.cs</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
-        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -112,6 +119,15 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="UI\EntryForm.resx">
+          <DependentUpon>EntryForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="UI\EntryView.resx">
+          <DependentUpon>EntryView.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="UI\Form1.resx">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="UI\MainView.resx">
           <DependentUpon>MainView.cs</DependentUpon>
         </EmbeddedResource>
