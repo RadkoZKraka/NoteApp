@@ -14,20 +14,19 @@ namespace NoteApp.UI
         public MainView()
         {
             InitializeComponent();
-            _dataWrapper.GetNotes();
+
         }
-  
+
         //newButton
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
-           
         }
 
         //delButton
         private void button4_Click(object sender, EventArgs e)
         {
-            _dataWrapper.RemoveNote();   
+            _dataWrapper.RemoveNote();
         }
 
         //nextButton
@@ -58,6 +57,11 @@ namespace NoteApp.UI
         {
             var newUser = Microsoft.VisualBasic.Interaction.InputBox("Question", "Test", "Użytkownik");
             _dataWrapper.AddUser(newUser);
+        }
+
+        private void loadNotes_Click(object sender, EventArgs e)
+        {
+            _dataWrapper.GetNotes();
         }
     }
 }

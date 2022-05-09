@@ -17,7 +17,6 @@ namespace NoteApp.Lib
         
         public void GetNotes()
         {
-            
             var usersList = Data.Note.Keys.ToArray();
 
             if (_mainView.comboBox1.InvokeRequired)
@@ -31,7 +30,6 @@ namespace NoteApp.Lib
         
         public void ShowNote(string selection, int pos)
         {
-            
             var len = Data.Note[selection].Count;
             
             if (pos == 0) _mainView.textBox1.Text = Data.Note[selection][pos];

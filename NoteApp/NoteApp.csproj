@@ -83,6 +83,7 @@
         <Compile Include="Controllers\MainController.cs" />
         <Compile Include="Lib\DataWrapper.cs" />
         <Compile Include="Lib\ReadData.cs" />
+        <Compile Include="Lib\SingletonDataWrapper.cs" />
         <Compile Include="Lib\WriteData.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
