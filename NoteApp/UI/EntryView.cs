@@ -17,7 +17,7 @@ namespace NoteApp.UI
             InitializeComponent();
             _mainController.GetNotes();
         }
-        
+
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -26,6 +26,7 @@ namespace NoteApp.UI
         private void loadNoteList_Click(object sender, EventArgs e)
         {
             EntryForm entryForm = new EntryForm(this);
+            Hide();
             entryForm.StartProgram();
         }
 

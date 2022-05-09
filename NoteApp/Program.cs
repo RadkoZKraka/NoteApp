@@ -20,12 +20,13 @@ namespace NoteApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // var readData = new ReadData();
-            // readData.ReadFile();
-            MainView mainView = new MainView();
-            FirstView firstView = new FirstView();
-            // Application.Run(new Form1(mainView));
 
+            Run();
+        }
+
+        static void Run()
+        {
+            FirstView firstView = new FirstView();
             Application.Run(new EntryForm(firstView));
         }
     }

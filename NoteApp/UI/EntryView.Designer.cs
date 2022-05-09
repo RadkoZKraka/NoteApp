@@ -41,14 +41,16 @@ namespace NoteApp.UI
             // noteList
             // 
             this.noteList.FormattingEnabled = true;
-            this.noteList.Location = new System.Drawing.Point(89, 92);
+            this.noteList.Location = new System.Drawing.Point(25, 12);
             this.noteList.Name = "noteList";
             this.noteList.Size = new System.Drawing.Size(206, 21);
             this.noteList.TabIndex = 0;
             // 
             // addNoteList
             // 
-            this.addNoteList.Location = new System.Drawing.Point(133, 171);
+            this.addNoteList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addNoteList.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.addNoteList.Location = new System.Drawing.Point(69, 82);
             this.addNoteList.Name = "addNoteList";
             this.addNoteList.Size = new System.Drawing.Size(114, 25);
             this.addNoteList.TabIndex = 1;
@@ -58,7 +60,9 @@ namespace NoteApp.UI
             // 
             // deleteNoteList
             // 
-            this.deleteNoteList.Location = new System.Drawing.Point(133, 214);
+            this.deleteNoteList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteNoteList.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.deleteNoteList.Location = new System.Drawing.Point(69, 125);
             this.deleteNoteList.Name = "deleteNoteList";
             this.deleteNoteList.Size = new System.Drawing.Size(114, 25);
             this.deleteNoteList.TabIndex = 2;
@@ -68,7 +72,9 @@ namespace NoteApp.UI
             // 
             // loadNoteList
             // 
-            this.loadNoteList.Location = new System.Drawing.Point(133, 128);
+            this.loadNoteList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadNoteList.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.loadNoteList.Location = new System.Drawing.Point(69, 39);
             this.loadNoteList.Name = "loadNoteList";
             this.loadNoteList.Size = new System.Drawing.Size(114, 25);
             this.loadNoteList.TabIndex = 3;
@@ -78,9 +84,11 @@ namespace NoteApp.UI
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(270, 273);
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.exitButton.Location = new System.Drawing.Point(69, 178);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(102, 33);
+            this.exitButton.Size = new System.Drawing.Size(114, 26);
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "Wyjście";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -90,13 +98,14 @@ namespace NoteApp.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.loadNoteList);
             this.Controls.Add(this.deleteNoteList);
             this.Controls.Add(this.addNoteList);
             this.Controls.Add(this.noteList);
             this.Name = "FirstView";
-            this.Size = new System.Drawing.Size(387, 327);
+            this.Size = new System.Drawing.Size(253, 215);
             this.ResumeLayout(false);
         }
 

@@ -40,13 +40,16 @@ namespace NoteApp.UI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(633, 396);
+            this.nextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nextButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.nextButton.Location = new System.Drawing.Point(596, 393);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(139, 55);
+            this.nextButton.Size = new System.Drawing.Size(128, 55);
             this.nextButton.TabIndex = 0;
             this.nextButton.Text = "Następna";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -54,9 +57,11 @@ namespace NoteApp.UI
             // 
             // prevButton
             // 
-            this.prevButton.Location = new System.Drawing.Point(26, 396);
+            this.prevButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prevButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.prevButton.Location = new System.Drawing.Point(26, 393);
             this.prevButton.Name = "prevButton";
-            this.prevButton.Size = new System.Drawing.Size(139, 55);
+            this.prevButton.Size = new System.Drawing.Size(128, 55);
             this.prevButton.TabIndex = 1;
             this.prevButton.Text = "Poprzednia";
             this.prevButton.UseVisualStyleBackColor = true;
@@ -64,7 +69,9 @@ namespace NoteApp.UI
             // 
             // newButton
             // 
-            this.newButton.Location = new System.Drawing.Point(175, 418);
+            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.newButton.Location = new System.Drawing.Point(160, 415);
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(103, 33);
             this.newButton.TabIndex = 2;
@@ -74,7 +81,9 @@ namespace NoteApp.UI
             // 
             // delButton
             // 
-            this.delButton.Location = new System.Drawing.Point(502, 418);
+            this.delButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.delButton.Location = new System.Drawing.Point(487, 415);
             this.delButton.Name = "delButton";
             this.delButton.Size = new System.Drawing.Size(103, 33);
             this.delButton.TabIndex = 3;
@@ -84,6 +93,7 @@ namespace NoteApp.UI
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Impact", 8.25F);
             this.label2.Location = new System.Drawing.Point(324, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 21);
@@ -93,9 +103,11 @@ namespace NoteApp.UI
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(284, 418);
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.saveButton.Location = new System.Drawing.Point(269, 422);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(212, 33);
+            this.saveButton.Size = new System.Drawing.Size(212, 26);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Zapisz";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -103,15 +115,17 @@ namespace NoteApp.UI
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 60);
+            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.Location = new System.Drawing.Point(26, 59);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(735, 327);
+            this.textBox1.Size = new System.Drawing.Size(698, 327);
             this.textBox1.TabIndex = 7;
             // 
             // comboBox1
             // 
             this.comboBox1.AllowDrop = true;
+            this.comboBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(26, 36);
             this.comboBox1.MaxLength = 900;
@@ -122,18 +136,33 @@ namespace NoteApp.UI
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(318, 394);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.button1.Location = new System.Drawing.Point(269, 392);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 24);
+            this.button1.Size = new System.Drawing.Size(89, 24);
             this.button1.TabIndex = 9;
             this.button1.Text = "Dodaj użytkownika";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.button2.Location = new System.Drawing.Point(392, 393);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(89, 24);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Usuń";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
@@ -144,10 +173,12 @@ namespace NoteApp.UI
             this.Controls.Add(this.prevButton);
             this.Controls.Add(this.nextButton);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(761, 454);
+            this.Size = new System.Drawing.Size(748, 454);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button button2;
 
         private System.Windows.Forms.Button button1;
 
