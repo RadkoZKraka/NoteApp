@@ -14,15 +14,5 @@ namespace NoteApp.Lib
     {
         public Dictionary<string, List<string>> Note { get; set; }
         
-        public  void ReadFile()
-        {
-            
-
-        }
-
-        public void DisplayNote(string value)
-        {
-            
-        }
     }
 }

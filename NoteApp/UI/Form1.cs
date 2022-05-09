@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NoteApp.UI;
 
 namespace NoteApp
 {
@@ -18,6 +19,12 @@ namespace NoteApp
             Controls.Add(mainView);
             mainView.Dock = DockStyle.Fill;
             
+        }
+        public void StartProgram()
+        {
+            var mainView = new MainView();
+            Form1 form1 = new Form1(mainView);
+            form1.ShowDialog(mainView);
         }
     }
 }

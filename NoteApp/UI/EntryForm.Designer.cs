@@ -37,9 +37,9 @@ namespace NoteApp.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 365);
+            this.ClientSize = new System.Drawing.Size(412, 330);
             this.Name = "EntryForm";
-            this.Text = "EntryForm";
+            this.Text = "NoteApp";
             this.ResumeLayout(false);
         }
 

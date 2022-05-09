@@ -23,7 +23,10 @@ namespace NoteApp
             // var readData = new ReadData();
             // readData.ReadFile();
             MainView mainView = new MainView();
-            Application.Run(new Form1(mainView));
+            FirstView firstView = new FirstView();
+            // Application.Run(new Form1(mainView));
+
+            Application.Run(new EntryForm(firstView));
         }
     }
 }

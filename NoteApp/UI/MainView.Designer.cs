@@ -40,7 +40,6 @@ namespace NoteApp.UI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.loadNotes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nextButton
@@ -131,21 +130,10 @@ namespace NoteApp.UI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // loadNotes
-            // 
-            this.loadNotes.Location = new System.Drawing.Point(526, 36);
-            this.loadNotes.Name = "loadNotes";
-            this.loadNotes.Size = new System.Drawing.Size(210, 20);
-            this.loadNotes.TabIndex = 10;
-            this.loadNotes.Text = "Załaduj notatki";
-            this.loadNotes.UseVisualStyleBackColor = true;
-            this.loadNotes.Click += new System.EventHandler(this.loadNotes_Click);
-            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.loadNotes);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
@@ -160,8 +148,6 @@ namespace NoteApp.UI
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
-        private System.Windows.Forms.Button loadNotes;
 
         private System.Windows.Forms.Button button1;
 
