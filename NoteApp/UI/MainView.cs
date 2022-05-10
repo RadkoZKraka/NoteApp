@@ -15,7 +15,7 @@ namespace NoteApp.UI
         private MainController _mainController;
         public MainView()
         {
-            _dataWrapper = new DataWrapper(this);
+            _dataWrapper = new DataWrapper(filePath: @"C:\Notatki",this);
             _mainController = new MainController(_dataWrapper);
             InitializeComponent();
             _mainController.GetNotes();
@@ -62,6 +62,11 @@ namespace NoteApp.UI
         {
             var newUser = Microsoft.VisualBasic.Interaction.InputBox("Question", "Test", "Użytkownik");
             _mainController.AddUser(newUser);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            _mainController.RemoveUser();
         }
     }
 }

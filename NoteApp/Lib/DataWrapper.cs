@@ -12,20 +12,28 @@ namespace NoteApp.Lib
     {
         private int _ret;
         private static readonly string InputFile = File.ReadAllText(Const.FilePath);
-        private readonly ReadData _data = JsonSerializer.Deserialize<ReadData>(InputFile);
-        
+
         //data wrapper nie powinien bezpośrednio zmieniać mainView tylko przyjmować akcje 
         
         private readonly MainView _mainView;
         private readonly FirstView _firstView;
+        private readonly ReadData _data;
         
         //to powinien być main controller
-        public DataWrapper(MainView mainView = null, FirstView firstView = null)
+        public DataWrapper( string filePath, MainView mainView = null, FirstView firstView = null)
         {
             _mainView = mainView;
             _firstView = firstView;
+            _data = ReadFile(filePath);
         }
 
+        public ReadData ReadFile(string filePath)
+        {
+            
+            ReadData _data = JsonSerializer.Deserialize<ReadData>(InputFile);
+            return _data;
+
+        }
         public void GetNotes()
         {
             var usersList = _data.Note.Keys.ToArray();

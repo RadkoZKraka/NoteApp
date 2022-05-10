@@ -7,7 +7,8 @@ namespace NoteApp.Controllers
 {
     //controller powinien przyjmować data wrappera i main view by przyjmował controllera zamiast wrappera i controller powinien w sumie mieć odwołania do wrappera i jego metod
     //wrapper nie powinien być wywoływane z mainview tylko z controller
-    //ToDo: instalator
+    //ToDo: poprawne usuwanie użytkowników
+    //ToDo: by mainView ładował się z poprawnym użytkownikiem wybranym
     public class MainController
     {
         private Thread th;

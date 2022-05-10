@@ -12,7 +12,7 @@ namespace NoteApp.UI
 
         public FirstView()
         {
-            _dataWrapper = new DataWrapper(firstView: this);
+            _dataWrapper = new DataWrapper(filePath: @"C:\Notatki",firstView: this);
             _mainController = new MainController(_dataWrapper);
             InitializeComponent();
             _mainController.GetNotes();

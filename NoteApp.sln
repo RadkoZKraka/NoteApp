@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteApp", "NoteApp\NoteApp.csproj", "{09AFC99C-A56F-4727-8B6F-532AAA4B5E63}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalator Notatek2", "Instalator Notatek2\Instalator Notatek2.vdproj", "{3C0E1FA7-55A5-4833-8AE6-FAD9F1B3564E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,13 @@ Global
 		{09AFC99C-A56F-4727-8B6F-532AAA4B5E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09AFC99C-A56F-4727-8B6F-532AAA4B5E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09AFC99C-A56F-4727-8B6F-532AAA4B5E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0E1FA7-55A5-4833-8AE6-FAD9F1B3564E}.Debug|Any CPU.ActiveCfg = Debug
+		{3C0E1FA7-55A5-4833-8AE6-FAD9F1B3564E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCC95003-10C8-42C8-B77E-8B80FD9818F2}
 	EndGlobalSection
 EndGlobal
