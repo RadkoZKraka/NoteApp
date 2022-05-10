@@ -9,6 +9,7 @@ namespace NoteApp.Controllers
     //wrapper nie powinien być wywoływane z mainview tylko z controller
     //ToDo: poprawne usuwanie użytkowników
     //ToDo: by mainView ładował się z poprawnym użytkownikiem wybranym
+    //ToDo: wybieranie pliku i tworzenie go jeżeli nie istnieje
     public class MainController
     {
         private Thread th;
